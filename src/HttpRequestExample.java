@@ -20,10 +20,10 @@ public class HttpRequestExample {
                 .build();
 
         try {
-            // Envie a solicitação e obtenha a resposta
+            // Enviar a solicitação e obtenha a resposta
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Imprima o código de status da resposta
+            // Imprimir o código de status da resposta
             System.out.println("Status code: " + response.statusCode());
 
             // Imprima o corpo da resposta
